@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <section>
+
+        <form method="post" action="">
+
+            <fieldset>
+                <legend>Votre Civilité</legend>
+
+                <p>
+
+                    Quelle est votre civilité :
+
+                    <input type="radio" name="civilite" value="madame" id="madame" checked="checked"/> <label for="madame">Madame</label>
+                    <input type="radio" name="civilite" value="monsieur" id="monsieur" /> <label for="monsieur">Monsieur</label>
+                    <input type="radio" name="civilite" value="autre" id="autre" /> <label for="autre">Autre...</label>
+                </p>
+
+                <div>
+                    <label for="precisions">Si "Autre", veuillez préciser !!!! :</label>
+                    <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset id="s1">
+                <legend>Vos coordonnées</legend>
+
+                <div>
+                <label for="nom">Quel est votre nom ?</label>
+                <input type="text" name="nom" id="nom" />
+                </div>
+
+                <div>
+                <label for="prenom">Quel est votre prénom ?</label>
+                <input type="text" name="prenom" id="prenom" />
+                </div>
+
+                <div>
+                <label for="email">Quel est votre e-mail ?</label>
+                <input type="email" name="email" id="email" />
+                </div>
+
+                <div>
+                <label for="tel">Quel est votre numéro de téléphone ?</label>
+                <input type="tel" name="tel" id="tel" />
+                </div>
+                <div>
+                    <label for="pays">Dans quel pays habitez-vous ?</label><br />
+                    <select name="pays" id="pays">
+                        <option value="france">France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                        <option value="royaume-uni">Royaume-Uni</option>
+                        <option value="canada">Canada</option>
+                        <option value="etats-unis">États-Unis</option>
+                        <option value="chine">Chine</option>
+                        <option value="japon">Japon</option>
+                    </select>
+                </div>
+
+
+            </fieldset>
+
+            <fieldset id="s2">
+                <legend>Vos identifiants de connexion</legend>
+                <div>
+
+                <label for="pseudo">Quel est votre pseudo ?</label>
+                <input type="text" name="pseudo" id="pseudo" />
+                </div>
+
+                <div>
+                <label for="psswd">Quel est votre mot de passe ?</label>
+                <input type="password" name="psswd" id="psswd" />
+                </div>
+
+                <div>
+                <label for="psswd">Confirmez votre mot de passe :</label>
+                <input type="password" name="psswd" id="psswd" />
+                </div>
+
+            </fieldset>
+
+            <fieldset id="s3">
+                <legend>Une description</legend>
+
+
+                    <label for="description">Faites nous une petite descriprtion de vous !!!! :</label>
+                    <textarea name="description" id="description" cols="40" rows="4"></textarea>
+
+            </fieldset>
+
+            <p>
+                J'ai pris connaissance des CGU :
+                <input type="checkbox" name="cgu" id="cgu" required/> <label for="cgu"></label><br />
+
+            </p>
+
+            <input type="submit" value="Envoyer" id="submit" />
+            <input type="reset" value="Reset" id="reset" />
+        </form>
+    </section>
+
+</body>
+</html>
